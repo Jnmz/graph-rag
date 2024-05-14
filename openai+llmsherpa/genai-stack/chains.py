@@ -203,7 +203,7 @@ def configure_qa_structure_rag_chain(llm, embeddings, embeddings_store_url, user
         url=embeddings_store_url,
         username=username,
         password=password,
-        database='bravo',  # neo4j by default
+        database='neo4j',  # neo4j by default
         index_name="chunkVectorIndex",  # vector by default
         node_label="Embedding",  # embedding node label
         embedding_node_property="value",  # embedding value property
